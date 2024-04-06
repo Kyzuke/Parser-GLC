@@ -23,36 +23,36 @@ O programa irá analisar a entrada de acordo com a gramática, gerar a árvore d
 
 # Exemplos:
 
-a = 2 + 3
-b = a * 5
-c = (b - a) + 10 
-^Z
+a = 2 + 3 <br>
+b = a * 5 <br>
+c = (b - a) + 10 <br>
+^Z <br>
 Árvore de parsing: 
 (program (statement (assignment (variable a) = (expression (term (factor 2)) + (term (factor 3))))) (statement (assignment (variable b) = (expression (term (factor (variable a)) * (factor 
-5))))) (statement (assignment (variable c) = (expression (term (factor ( (expression (term (factor (variable b))) - (term (factor (variable a)))) ))) + (term (factor 10))))))
+5))))) (statement (assignment (variable c) = (expression (term (factor ( (expression (term (factor (variable b))) - (term (factor (variable a)))) ))) + (term (factor 10)))))) <br>
 Valor da expressão final: 30
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-a = 10
-b = 2
-c = (a * b) + 3
-d = (c / 10) * b
-^Z
+a = 10 <br>
+b = 2 <br>
+c = (a * b) + 3 <br>
+d = (c / 10) * b <br>
+^Z <br>
 Árvore de parsing: 
 (program (statement (assignment (variable a) = (expression (term (factor 10))))) (statement (assignment (variable b) = (expression (term (factor 2))))) (statement (assignment (variable c) 
-= (expression (term (factor ( (expression (term (factor (variable a)) * (factor (variable b)))) ))) + (term (factor 3))))) (statement (assignment (variable d) = (expression (term (factor ( (expression (term (factor (variable c)) / (factor 10))) )) * (factor (variable b)))))))
+= (expression (term (factor ( (expression (term (factor (variable a)) * (factor (variable b)))) ))) + (term (factor 3))))) (statement (assignment (variable d) = (expression (term (factor ( (expression (term (factor (variable c)) / (factor 10))) )) * (factor (variable b))))))) <br>
 Valor da expressão final: 4
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 a = 3    
-b = a + c
-^Z
+b = a + c <br>
+^Z <br>
 Erro: Variável c não foi definida.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-a @ b
-^Z
+a @ b <br>
+^Z <br>
 Erro: Sintaxe inválida na linha: 1, posição 2: token recognition error at: '@'
