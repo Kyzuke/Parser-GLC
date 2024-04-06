@@ -17,7 +17,7 @@ Java 8 ou superior
 ANTLR 4.13.1 (No repositório já possui o .jar para o pleno funcionamento do programa)
 
 # Como usar:
-Após executar o programa, ele estará esperando por uma entrada. Você deve digitar a entrada no terminal. A entrada deve estar de acordo com a gramática definida no arquivo Gramatica.g4.
+Após executar o Main.java, o programa estará esperando por uma entrada. Você deve digitar a entrada no terminal. A entrada deve estar de acordo com a gramática definida no arquivo Gramatica.g4.
 Você pode digitar várias atribuições e apertar Enter para digitar a próxima. Para finalizar o input, no Windows, você pode usar CTRL + Z e depois pressionar Enter, já no Linux e no MacOS, você pode usar CTRL + D para enviar um sinal e indicar o fim da entrada.
 O programa irá analisar a entrada de acordo com a gramática, gerar a árvore de análise e imprimir a árvore e o valor da expressão final.
 
