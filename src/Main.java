@@ -1,7 +1,7 @@
 // Aluno: Gabriel Silva Duarte
 // Matrícula: 202220171
 // Disciplina: Teoria da Computação
-// Github: 
+// Github: github.com/Kyzuke/Parser-GLC
 
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
@@ -51,7 +51,7 @@ public class Main {
     public static class CustomErrorListener extends BaseErrorListener {
         @Override
         public void syntaxError(Recognizer<?, ?> recognizer, Object offendingSymbol, int line, int charPositionInLine, String msg, RecognitionException e) {
-            System.out.println("Error: Invalid syntax at line " + line + ", position " + charPositionInLine + ": " + msg);
+            System.out.println("Erro: Sintaxe inválida na linha: " + line + ", posição " + charPositionInLine + ": " + msg);
             System.exit(1);
         }
     }
